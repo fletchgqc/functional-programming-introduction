@@ -23,10 +23,10 @@ public class DiscountManager {
             return false;
         }
 
-        Calendar endSummerHolidays = holidayStore.getStartSummerHolidays2018();
-        endSummerHolidays.add(Calendar.DATE, 7);
+        Calendar endDiscountPeriod = holidayStore.getStartSummerHolidays2018();
+        endDiscountPeriod.add(Calendar.DATE, 7);
 
-        if (purchaseDate.after(endSummerHolidays)) {
+        if (purchaseDate.after(endDiscountPeriod)) {
             return false;
         }
 

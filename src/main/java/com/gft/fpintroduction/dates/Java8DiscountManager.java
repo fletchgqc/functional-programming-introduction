@@ -25,9 +25,9 @@ public class Java8DiscountManager {
             return false;
         }
 
-        LocalDate endSummerHolidays = startSummerHolidays.plusDays(7);
+        LocalDate endDiscountPeriod = startSummerHolidays.plusDays(7);
 
-        if (purchaseDate.isAfter(endSummerHolidays)) {
+        if (purchaseDate.isAfter(endDiscountPeriod)) {
             return false;
         }
 
